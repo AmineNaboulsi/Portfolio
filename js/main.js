@@ -13,7 +13,7 @@ function dispaly_projetcs(txt){
         if(txt == li_[i].category || txt == "all")
         innerlist+=`
         <article class="card">
-        <img style="width: 266px;height:180px" src=`+ li_[i].img+` />
+        <img style="width: 266px;height:140px" src=`+ li_[i].img+` />
         <div style="width: 266;height:250" class="box ">
             <h1 class="title"> `+ li_[i].title+` </h1>
             <p class="sub-title">`+ li_[i].desc+`</p>
@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded" , function(){
     const currentmode= localStorage.getItem("currentmode");
     if(currentmode == "dark"){
         document.body.setAttribute("class" ,"dark");
-    }else{document.body.setAttribute("class" ,"light");}
+    }else{
+        document.body.setAttribute("class" ,"light");}
 });
 document.addEventListener("scroll" , function(){
 if(document.documentElement.scrollTop>300){
@@ -83,10 +84,13 @@ function hideMenu() {
   }
 
 function currentmode(){
+    const icon= document.getElementById("iconmode");
     if(document.body.getAttribute("class") == "dark"){
         document.body.setAttribute("class" ,"light");
         localStorage.setItem("currentmode" ,"light");
+        icon.setAttribute("class" , "icon-sun");
     }else{document.body.setAttribute("class" ,"dark");
-    localStorage.setItem("currentmode" ,"dark");}
+    localStorage.setItem("currentmode" ,"dark");
+    icon.setAttribute("class" , "icon-moon-o");}
     
 }

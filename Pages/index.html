@@ -13,6 +13,7 @@
     <link rel='stylesheet'href='../css/footer.css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='../js/main.js'></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body class="">
     <div id="container" class="container ">
@@ -29,13 +30,13 @@
                 </ul>
             </nav>
             <div id="mn"></div>
-            <button class="mode flex" onclick="currentmode()"><span class="icon-moon-o "></span></button>
+            <button class="mode flex" onclick="currentmode()"><span id="iconmode" class="icon-moon-o"></span></button>
            
         </div>
         <section class="hero flex">
             <div class="left-section">
                 <div class="parent-avatar flex">
-                    <img class="myavatar" src="../images//me.jpg" alt="Naboulsi Amine"/>
+                    <img class="myavatar" src="../images/me.jpg" alt="Naboulsi Amine"/>
                     <div class="icon-verified"></div>
                 </div>
                 <h1 class="title">Software Engineering</h1>
@@ -46,8 +47,8 @@
                     <div class="icon icon-github2"></div>
                 </div>
             </div>
-            <div class="right-section ">
-                <img class="anmtion" />
+            <div class="right-section">
+                <dotlottie-player src="../animations/computer.json" background="transparent" speed="1" style="width: 300px; height: 300px;" direction="1" playMode="normal" loop autoplay></dotlottie-player>
             </div>
             
         </section>
@@ -71,7 +72,7 @@
                 Contacts Me
             </h1>
                 <p class="subtitle">vokzn vzbibizvnojeznvdsvnisv sdçuvhz_uvz</p>
-                <div class="flex">
+                <div class="flex"  style="justify-content: space-between">
                     <form class="formB ">
                         <div class="flex" >
                             <label htmlfor="email">Email Adress : </label>
@@ -87,7 +88,10 @@
                         
                         <button class="submit">Submit</button>
                     </form>
-                    <div class="animation"></div>
+                    <div class="animation">
+                        <dotlottie-player src="../animations/mail.json" background="transparent" speed="1" style="width: 300px; height: 360px;" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+
+                    </div>
                 </div>
         </section>
         <div class="divider"></div>

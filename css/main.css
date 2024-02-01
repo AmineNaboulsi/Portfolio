@@ -71,6 +71,7 @@ main .card {
         rgba(255 ,255,255 ,0.05),
         rgba(255 ,255,255 ,0.05)
     );
+    animation: card_animation 0.6s 1;
 }
 main .card img {
     border-radius: 4px 4px 4px 4px;
@@ -132,4 +133,9 @@ main section.left-section{
         width: 8rem;
         font-size: 0.8rem;
     }
+}
+@keyframes card_animation{
+    0% {opacity: 0;};
+    60% {opacity: 0.5};
+    100% {opacity: 1};
 }
