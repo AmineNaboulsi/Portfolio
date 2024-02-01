@@ -1,0 +1,78 @@
+.contact .icon-mail-envelope-closed{
+    color: var(--subtitleColor);
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+.contact h1.title{
+    font-size: 2.1rem;
+    color: var(--titleColor);
+    margin-bottom: 1rem;
+}
+.contact p.subtitle{
+    color: var(--subtitleColor);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+.contact #email , .contact #msg {
+    all: unset;
+    background-color: rgba(63 ,63, 70 ,0.15);
+    border: 1px solid rgb(63 63 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-left: 1rem;
+    transition: 0.3s;
+} 
+.contact #email:focus , .contact #msg:focus {
+    border: 1px solid rgb(87, 227, 249);
+}
+.contact #email:hover , .contact #msg:hover {
+    border: 1px solid rgb(87, 227, 249);
+}
+.contact #msg {
+    resize: none;
+}
+.contact .submit {
+    resize: none;
+    background-color: rgba(63 ,63, 70 ,0.15);
+    width: 7rem;
+    padding: 1rem 1rem;
+    color: white;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(63 63 70);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.contact .submit:active {
+    scale: 0.9;
+}
+.contact .formB{
+    color: var(--titleColor);
+}
+@media(max-width :600px){
+    .contact .formB{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: auto;
+        margin-right: auto;
+    }
+    .contact div.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+    .contact .animation{
+        display: none;
+    }
+    .contact #email , .contact #msg {
+        width: 100%;
+        padding: 0.5rem 0;
+        margin-top: 1rem;
+        margin-left: 0;
+    } 
+    .contact .submit {
+        width: 30%;
+        align-self: center;
+    }
+    
+}

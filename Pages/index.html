@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Naboulsi Amine</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/header.css'>
+    <link rel='stylesheet'href='../css/style.css'>
+    <link rel='stylesheet'href='../css/hero.css'>
+    <link rel='stylesheet'href='../css/main.css'>
+    <link rel='stylesheet'href='../css/contact.css'>
+    <link rel='stylesheet'href='../css/footer.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='../js/main.js'></script>
+</head>
+<body class="">
+    <div id="container" class="container ">
+        <div class="header flex"   >
+            <button class="menu flex" onclick="showmenu()"><span class="icon-menu"></span></button>
+            <div></div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Acticles</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Speaking</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="mn"></div>
+            <button class="mode flex" onclick="currentmode()"><span class="icon-moon-o "></span></button>
+           
+        </div>
+        <section class="hero flex">
+            <div class="left-section">
+                <div class="parent-avatar flex">
+                    <img class="myavatar" src="../images//me.jpg" alt="Naboulsi Amine"/>
+                    <div class="icon-verified"></div>
+                </div>
+                <h1 class="title">Software Engineering</h1>
+                <p class="sub-title">I'm Naboulsi Amine, a seasoned software engineer with 3 years of hands-on experience. I specialize in Mobile / Web /Desktop apps, delivering innovative solutions that blend efficiency with elegance. Let's build the future of technology together!</p>
+                <div class="icons flex">
+                    <div class="icon icon-instagram"></div>
+                    <div class="icon icon-linkedin-with-circle"></div>
+                    <div class="icon icon-github2"></div>
+                </div>
+            </div>
+            <div class="right-section ">
+                <img class="anmtion" />
+            </div>
+            
+        </section>
+        <div class="divider"></div>
+        <main class="flex" >
+            <section id="tabp" class="left-section flex " >
+                <button id="tab1" value="all" class="active" onclick="selectTab('1')  ">All projects</button>
+                <button id="tab2" value="htmlcss" class="noactive" onclick="selectTab('2') ">HTML && CSS</button>
+                <button id="tab3" value="mobile" class="noactive" onclick="selectTab('3') ">Mobile Apps</button>
+                <button id="tab4" value="react" class="noactive" onclick="selectTab('4') ">React js</button>
+            </section>
+            <section id="panel"  class="right-section flex  ">
+               
+                
+            </section>
+        </main>
+        <div class="divider"></div>
+        <section class="contact">
+            <h1 class="title flex">
+                <span class="icon-mail-envelope-closed"></span>
+                Contacts Me
+            </h1>
+                <p class="subtitle">vokzn vzbibizvnojeznvdsvnisv sdçuvhz_uvz</p>
+                <div class="flex">
+                    <form class="formB ">
+                        <div class="flex" >
+                            <label htmlfor="email">Email Adress : </label>
+                            <input required type="email" id="email"/>
+                        
+                        </div>
+                        <div style="margin-top: 30px;" class="flex">
+                            
+                            <label htmlfor="msg">Your Message:</label>
+                            <textarea required name="" id="msg" cols="30" rows="10"></textarea>
+                        
+                        </div>
+                        
+                        <button class="submit">Submit</button>
+                    </form>
+                    <div class="animation"></div>
+                </div>
+        </section>
+        <div class="divider"></div>
+        <footer class="footer flex">
+            <ul class="flex"> 
+                <li><a href="">acdsc</a></li>
+                <li><a href="">bcdscsd</a></li>
+                <li><a href="">ccds</a></li>
+                <li><a href="">dcsdcsdc</a></li>
+            </ul>
+            <p>Copyright © 2024 all rights reserved</p>
+        </footer>
+        
+        <a style="opacity: 0;transition: 0.3s;" href="#container" id="scrolltoup">
+            <button  class="scrolltoup icon-arrow-up"></button>
+
+        </a>
+    </div>
+</body>
+</html>
